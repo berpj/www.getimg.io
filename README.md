@@ -1,1 +1,1 @@
-# www.getimg.tk
+# www.getimg.io
