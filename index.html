@@ -1,4 +1,138 @@
-<h1>GETIMG</h1>
-<h2>Resize and optimize images on the fly</h2>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetImg</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+      #header {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #2C5A97;
+        color: white;
+      }
 
-<p>How to use: <code>&lt;img src="//getimg.tk/?img=https://www.mydomain.com/images/image1.jpg&amp;width=200"&gt;</code></p>
+      #header a, #header a:visited, #header a:hover, #header a:active {
+        color: #eee!important;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      #footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #444;
+        color: #ddd;
+      }
+
+      #footer a, #footer a:visited, #footer a:hover, #footer a:active {
+        color: #fff!important;
+        text-decoration: none;
+      }
+
+      .grey-section {
+        background-color: #F8F9FA;
+        padding-top: 50px;
+        margin-top: 50px;
+        padding-bottom: 25px;
+      }
+
+      .white-section {
+        background-color: white;
+        padding-top: 50px;
+        margin-top: 10px;
+        color: #444!important;
+        padding-bottom: 25px;
+      }
+
+      h1, h2 {
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 50px;
+        font-size: 40px;
+      }
+
+      h2 {
+        font-size: 28px;
+        font-weight: normal;
+      }
+
+      h3 {
+        margin-bottom: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <div class="text-right">
+          <a href="/">Login <i class="fa fa-sign-in"></i></a>
+        </div>
+
+        <h1><img src="/logo.png" class="rounded" style="width: 38px; margin-top: -5px"> GetImg</h1>
+        <h2>Resize and optimize images on the fly.</h2>
+      </div>
+    </div>
+
+    <div class="white-section">
+      <div class="container">
+        <h3>Examples</h3>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="text-center">Before</h4>
+            <div class="img-thumbnail">
+              <img src="//images.unsplash.com/photo-1554024602-f082a8c3dc30" style="width: 100%">
+            </div>
+            <i>8688x5792px - 1.8MB</i><br>
+            <code>&lt;img src=&quot;https://images.unsplash.com/photo-1554024602-f082a8c3dc30&quot;&gt;</code><br>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="text-center">After</h4>
+            <div class="img-thumbnail">
+              <img src="//getimg.tk/?img=https://images.unsplash.com/photo-1554024602-f082a8c3dc30&width=540&quality=80" style="width: 100%">
+            </div>
+            <i>810x540px - 86kB - served by a global CDN</i><br>
+            <code>&lt;img src=&quot;//getimg.tk/?img=https://images.unsplash.com/photo-1554024602-f082a8c3dc30&amp;width=540&amp;quality=80&quot;&gt;</code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grey-section">
+      <div class="container">
+        <h3>Parameters</h3>
+        <div class="table-responsive">
+          <table class="table">
+            <tr><th>Name</th><th>Description</th><th>Default value</th></tr>
+            <tr><td>img</td><td>URL to image</td><td><i>none</i></td></tr>
+            <tr><td>width</td><td>Resize image to fit this width (in pixels)</td><td><i>none</i></td></tr>
+            <tr><td>height</td><td>Resize image to fit this height (in pixels)</td><td><i>none</i></td></tr>
+            <tr><td>quality</td><td>Set image quality (between 1, lowest image quality and highest compression, to 100, best quality but least effective compression)</td><td>92 for JPEG, 75 for PNG</td></tr>
+            <tr><td>rotate</td><td>Rotate image (in degrees)</td><td>0</td></tr>
+            <tr><td>flip</td><td>Flip image</td><td>false</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            Made with love in Paris by <a href="https://twitter.com/berpj">@berpj</a>.
+          </div>
+          <div class="col-sm-6 text-right">
+            GetImg is a service built on Amazon AWS network.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
