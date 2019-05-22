@@ -9,10 +9,17 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
       #header {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 40px;
+        padding-bottom: 60px;
         background-color: #2C5A97;
         color: white;
+        text-align: center;
+      }
+
+      #header .sub {
+        margin-top: 20px;
+        font-size: 20px;
+        opacity: 0.8;
       }
 
       #header a, #header a:visited, #header a:hover, #header a:active {
@@ -75,7 +82,8 @@
         </div>
 
         <h1><img src="/logo.png" class="rounded" style="width: 38px; margin-top: -5px"> GetImg</h1>
-        <h2>Resize and optimize images on the fly.</h2>
+        <h2>Resize and optimize your images on the fly.</h2>
+        <div class="sub">Our simple and robust API transforms, optimizes, and intelligently caches all your images to make your websites and apps faster.</div>
       </div>
     </div>
 
@@ -94,10 +102,10 @@
           <div class="col-lg-6">
             <h4 class="text-center">After</h4>
             <div class="img-thumbnail">
-              <img src="//getimg.tk/?img=https://images.unsplash.com/photo-1554024602-f082a8c3dc30&width=540&quality=80" style="width: 100%">
+              <img src="//getimg.tk/?img=https://images.unsplash.com/photo-1554024602-f082a8c3dc30&width=530&quality=80" style="width: 100%">
             </div>
-            <i>810x540px - 86kB - served by a global CDN</i><br>
-            <code>&lt;img src=&quot;//getimg.tk/?img=https://images.unsplash.com/photo-1554024602-f082a8c3dc30&amp;width=540&amp;quality=80&quot;&gt;</code>
+            <i>530x353px - 86kB - served by a global CDN</i><br>
+            <code>&lt;img src=&quot;//getimg.tk/?img=https://images.unsplash.com/photo-1554024602-f082a8c3dc30&amp;width=530&amp;quality=80&quot;&gt;</code>
           </div>
         </div>
       </div>
@@ -109,12 +117,27 @@
         <div class="table-responsive">
           <table class="table">
             <tr><th>Name</th><th>Description</th><th>Default value</th></tr>
-            <tr><td>img</td><td>URL to image</td><td><i>none</i></td></tr>
+            <tr><td><strong>img *</strong></td><td>URL to image</td><td><i>none</i></td></tr>
             <tr><td>width</td><td>Resize image to fit this width (in pixels)</td><td><i>none</i></td></tr>
             <tr><td>height</td><td>Resize image to fit this height (in pixels)</td><td><i>none</i></td></tr>
             <tr><td>quality</td><td>Set image quality (between 1, lowest image quality and highest compression, to 100, best quality but least effective compression)</td><td>92 for JPEG, 75 for PNG</td></tr>
             <tr><td>rotate</td><td>Rotate image (in degrees)</td><td>0</td></tr>
             <tr><td>flip</td><td>Flip image</td><td>false</td></tr>
+          </table>
+          <i>* : required parameter</i>
+        </div>
+      </div>
+    </div>
+
+    <div class="white-section" style="display: none">
+      <div class="container">
+        <h3>Pricing</h3>
+        <div class="table-responsive">
+          <table class="table">
+            <tr><th>Free</th><th>Developer</th><th>Business (Pay as you go)</th></tr>
+            <tr><td>The first 1000 requests are free. You don't even have to sign up.</td><td>Up to 1000 Master images accessed and 10GB of CDB bandwidth</td><td>Coming soon!</td></tr>
+            <tr><td>-</td><td>Email support during business hours</td><td>Coming soon!</td></tr>
+            <tr><td>0€</td><td>10€</td><td>Coming soon!</td></tr>
           </table>
         </div>
       </div>
